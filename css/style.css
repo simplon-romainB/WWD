@@ -1,0 +1,21 @@
+h1{
+    color: red;
+    font-size: 60px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: black;
+}
+
+.menuitem:hover {
+    color: blue;
+}
