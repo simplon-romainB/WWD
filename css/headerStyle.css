@@ -1,0 +1,253 @@
+*{
+    margin: 0mm;
+    padding: 0;
+}
+header{
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.conteneur{
+    background-image: url(/WWD/img/bcg-header2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+}
+
+
+/*---------- CONTENEUR RESEAUX SOCIAUX  -----------------*/
+
+
+.header .reseaux{
+    padding: 1% 0;
+    display: flex;
+    justify-content: end;
+}
+
+.reseaux figure{
+    padding: 1%;
+}
+
+
+/* ------------------ CONTENEUR NAVBAR ------------------*/
+
+nav{
+    background-color: #34313180;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*       LOGO      */
+
+nav .logo-WWD img{
+    width: 8vh;
+}
+
+/*      MENU NAV     */
+
+.menu-nav{
+    width: 40%;
+    text-align: center;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vh;
+    padding: 0 3%;
+    position: relative;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #aaa69d;
+    height: 3px;
+    width: 0%;
+    left: 40;
+    bottom: -15;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #000000C9
+}
+
+a:hover:after{
+    width: 70%;
+}
+
+/*      MENU CONTACT        */
+
+.contact{
+    width: 15%;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vh;
+    border: 1px solid #FFFFFF;
+    padding: 10% 7%;
+}
+
+/*------------  TITLE  ---------*/
+
+.conteneurTitre{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+}
+
+.conteneurTitre h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 7vh;
+    font-weight: 600;
+    color: #8D8D8DC7;
+    letter-spacing: 0.7vh;
+}
+
+.conteneurTitre video{
+    width: 10%;
+    position: absolute;
+    left: 193;
+    object-fit: cover;
+}
+
+.conteneurTitre h3{
+    max-width: 50%;
+    font-size: 4.5vh;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+/* ----------- BANDEROLE DE DEFILEMENT ET INFO --------*/
+
+
+.conteneur-bcg{
+    background-color: #000000C9;
+    height: 10%;
+    position: relative;
+}
+
+.banderole{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+}
+
+.banderole2{
+    color: #FFFFFF;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+}
+
+.banderole2 .txt{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF;
+}
+
+.banderole3{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 43%;
+}
+
+.banderole3 .txt{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF80;
+}
+
+.banderole4{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+}
+
+.banderole4 .txt{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF;
+}
+
+.defilement div{
+    font-family: 'Stoke', serif;
+    font-size: 2.4vh;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.defilement div span{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF80;
+}
+
+.txt{
+    white-space: nowrap;
+    font-size: 2vh;
+    animation: txtdefilement 10s linear infinite ;
+}
+
+@keyframes txtdefilement {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+
+/*          INFO       */
+
+.info{
+    margin-bottom: 5%;
+}
+
+.banner{
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner video{
+    width: 100%;
+    position: absolute;
+
+}
+.info h2{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 7vh;
+    text-align: center;
+    mix-blend-mode: multiply;
+    background: #2d3436;/*#000000C9;*/
+    background-position: center;
+    width: 200vh;
+    color: #fff;
+    line-height:26vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.info p{
+    color:#FFFFFF;
+    font-size: 3vh;
+    text-align: center;
+}
+
