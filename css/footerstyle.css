@@ -1,15 +1,10 @@
 *{
     margin: 0;
     padding: 0; 
-    animation-name: shrink;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; 
+   
 }
 
-@keyframes shrink {
-    0% {font-size: 300px;}
-    100% {font-size: 16px;}
-}
+
 .footercontainer {
     width: 100%;
     height: 76.649vh;  
@@ -109,6 +104,12 @@
    position: relative;
    top: -86%;
    left: -4%;
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 650px){
+
 }
 
 
