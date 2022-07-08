@@ -116,12 +116,17 @@ button {
         opacity: 1;
     }
     button {
-        width:21.093vw;
+        width:74.1vw;
         height: 12.178vh;
         background-color:#343131;
         color: white;
         border-radius: 10px;
         font-family: 'QuickSands';
         font-size: 1rem;
+    }
+    .header {
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
     }
 }
