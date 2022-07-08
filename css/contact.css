@@ -3,6 +3,8 @@
     margin:0;
     font-size: 16px;
 }
+
+
 .grey {
     background-color: #343131;
     width:25%;
@@ -18,8 +20,10 @@
     font-family: 'Stoke';
     position: absolute;
     top: 19%;
-    left: 25%;
-    
+    left: 25%;   
+}
+textarea {
+    resize: none;
 }
 
 .titreout {
@@ -50,6 +54,13 @@ form {
     top: 42%;
     transition: all 1s;
     
+}
+input {
+    width: 50vw;
+    font-size: 1.5rem;
+}
+label {
+    font-size: 2rem;
 }
 button {
     position: absolute;
@@ -89,4 +100,28 @@ button {
     border-radius: 10px;
     font-family: 'QuickSands';
     font-size: 3rem;
+}
+@media screen and (max-width: 1045px) {
+    .bonjour {
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Stoke';
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        opacity:0; 
+        transition: all 1s;
+    }
+    .bonjourin {
+        opacity: 1;
+    }
+    button {
+        width:21.093vw;
+        height: 12.178vh;
+        background-color:#343131;
+        color: white;
+        border-radius: 10px;
+        font-family: 'QuickSands';
+        font-size: 1rem;
+    }
 }

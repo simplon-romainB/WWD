@@ -3,8 +3,7 @@
     padding: 0; 
    
 }
-
-
+@media screen and (min-width: 1024px) { 
 .footercontainer {
     width: 100%;
     height: 76.649vh;  
@@ -91,25 +90,134 @@
     text-align: center;
 }
 .logo {
-    height: 32.460vh;
+    /*height: 32.460vh;*/
     width: 15.833vw;
     position: relative;
     left:75%;
-    top: -85%;
+    top: -97%;
 }
 .entreprise {
    font-size: 2.5rem;
    font-family: 'QuickSand';
    text-align: right;
    position: relative;
-   top: -86%;
+   top: -93%;
    left: -4%;
 }
+}
 @media screen and (max-width: 1024px){
-
+    .logo {
+        /*height: 32.460vh;*/
+        width: 15.833vw;
+        position: relative;
+        left:75%;
+        top: -97%;
+    }
+    .sliding{
+        animation-name: slide3;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+    .centralgen {
+        font-family: 'Stoke';
+        position: absolute;
+        left:28%;
+        bottom: 18%;
+        opacity: 0;
+        transition: all 1s;
+        font-size: 3rem;
+    }
+    @keyframes slide3{
+        0%{
+            opacity:0;
+            transform: translateY(70);
+        }
+        50%{
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        
+        100% {
+            opacity:0;
+            transform: translateY(-70vh);
+        }
+    }
+    .gentext {
+        font-size: 2.5rem;
+        color: #8d8d8d;
+    }
 }
 @media screen and (max-width: 650px){
-
+    .logo {
+        /*height: 32.460vh;*/
+        width: 15.833vw;
+        position: relative;
+        left:75%;
+        top: -97%;
+    }
+    .contactbutton {
+        height: 6.91vh;
+        width: 17.604vw;
+        background-color: white;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        left:18%;
+        top:12%;
+        font-size: 2.5rem;
+        font-family:'QuickSand';
+        transition: all 0.2s;
+    }
+    .sliding{
+        animation-name: slide2;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+    .centralgen {
+        font-family: 'Stoke';
+        position: absolute;
+        left:28%;
+        bottom: 18%;
+        opacity: 0;
+        transition: all 1s;
+        font-size: 3rem;
+    }
+    @keyframes slide2{
+        0%{
+            opacity:0;
+            transform: translateX(70);
+        }
+        50%{
+            opacity: 1;
+        }
+        80% {
+            opacity: 1;
+        }
+        
+        100% {
+            opacity:0;
+            transform: translateX(-70vh);
+        }
+    }
+    .gentext {
+        font-size: 2.5rem;
+        color: #8d8d8d;
+    }
+    .contactbutton {
+        height: 6.91vh;
+        width: 17.604vw;
+        background-color: white;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        left:18%;
+        top:12%;
+        font-size: 2.5rem;
+        font-family:'QuickSand';
+        transition: all 0.2s;
+    }
 }
 
 
