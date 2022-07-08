@@ -1,0 +1,355 @@
+*{
+    margin: 0mm;
+    padding: 0;
+}
+header{
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header{
+    background-image: url(/WWD/img/bcg-header2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 130vh;
+    position: relative;
+}
+
+
+/*---------- CONTENEUR RESEAUX SOCIAUX  -----------------*/
+
+
+.header .reseaux{
+    padding: 1% 0;
+    display: flex;
+    justify-content: end;
+}
+
+.reseaux figure{
+    padding: 1%;
+}
+
+
+/* ------------------ CONTENEUR NAVBAR ------------------*/
+
+nav{
+    background-color: #34313180;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*       LOGO      */
+
+nav .logo-WWD img{
+    width: 8vh;
+}
+
+/*      MENU NAV     */
+
+.menu-nav{
+    width: 40%;
+    text-align: center;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-nav .liens-nav{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vh;
+    padding: 0 3%;
+    position: relative;
+}
+
+.liens-nav:after{
+    content: "";
+    position: absolute;
+    background-color: #aaa69d;
+    height: 3px;
+    width: 0%;
+    left: 30;
+    bottom: -15;
+    transition: 0.3s;
+}
+
+.liens-nav:hover{
+    font-weight: 700;
+}
+
+.liens-nav:hover:after{
+    width: 70%;
+}
+
+/*      MENU CONTACT        */
+
+.contact{
+    width: 15%;
+}
+
+.contact .contact-lien{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5vh;
+    padding: 10% 7%;
+    
+    
+}
+
+.contact-lien:before{
+    position:absolute;
+    content:'';
+    width:0;
+    height:0;
+    background-color: transparent;
+    border: 2px solid transparent;
+    bottom: 13%;
+    left: -2%;
+    box-sizing: border-box;
+}
+
+.contact-lien:hover::before{
+    width: 11vw;
+    height: 7vh;
+    border: 2px solid #aaa69d;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.5s linear,
+                width 0.5s linear 0.5s;
+}
+
+.contact-lien::after{
+    position:absolute;
+    content:'';
+    width:0;
+    height:0;
+    background-color: transparent;
+    border: 2px solid transparent;
+    top: 14%;
+    right: 2%;
+    box-sizing: border-box;
+}
+
+.contact-lien:hover::after{
+    width: 11vw;
+    height: 7vh;
+    border: 2px solid #aaa69d;
+    border-left: none;
+    border-top: none;
+    transition: height 0.5s linear,
+                width 0.5s linear 0.5s;
+}
+
+.contact .contact-lien span{
+    position: relative;
+    z-index: 2;
+}
+
+/*------------  TITLE  ---------*/
+
+.conteneurTitre{
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+}
+
+.conteneurTitre h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 7vh;
+    font-weight: 600;
+    color: #8D8D8DC7;
+    letter-spacing: 0.7vh;
+}
+
+.conteneurTitre video{
+    width: 10%;
+    position: absolute;
+    left: 193;
+    object-fit: cover;
+}
+
+.conteneurTitre h3{
+    max-width: 50%;
+    font-size: 4.5vh;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+
+/* ----------- BANDEROLE DE DEFILEMENT ET INFO --------*/
+
+
+.conteneur-bcg{
+    background-color: #000000C9;
+    height: 10%;
+    position: relative;
+    bottom: -10%;
+}
+
+.banderole{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+}
+
+.banderole2{
+    color: #FFFFFF;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 22%;
+}
+
+.banderole2 .txt{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF;
+}
+
+.banderole3{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 43%;
+}
+
+.banderole3 .txt{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF80;
+}
+
+.banderole4{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 65%;
+}
+
+.banderole4 .txt{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF;
+}
+
+.defilement div{
+    font-family: 'Stoke', serif;
+    font-size: 2.4vh;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+.defilement div span{
+    font-family: 'Stoke', serif;
+    color: #FFFFFF80;
+}
+
+.txt{
+    white-space: nowrap;
+    font-size: 2vh;
+    animation: txtdefilement 10s linear infinite ;
+}
+
+@keyframes txtdefilement {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+
+/*          INFO       */
+
+
+.banner{
+    width: 100%;
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner video{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.info h2{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 7vh;
+    text-align: center;
+    mix-blend-mode: multiply;
+    background: #2d3436;/*#000000C9;*/
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+    line-height:26vh;
+    position: absolute;
+    z-index: 3;
+}
+
+p{
+    position: absolute;
+    bottom: 10%;
+    z-index: 3;
+    color:#FFFFFF;
+    font-size: 3vh;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 425px ) {
+    .conteneur .reseaux{
+        display: none;
+    }
+
+    .bcg{
+        background: none;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .conteneur-bcg{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .info h2{
+        display: none;
+    }
+
+    p{
+        display: none;
+    }
+
+    .banner video{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .navbar-mobile{
+        display: block;
+    }
+
+
+}
+
