@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.footercontainer {
+    width: 100%;
+    height: 76.649vh;  
+}
+.grey {
+    height: 76.649vh;
+    width: 27.656vw;
+    background-color: #343131;
+}
+.centralgen {
+    font-family: 'Stoke';
+    position: absolute;
+    left:50%;
+    bottom: 18%;
+    opacity: 0;
+    transition: all 1s;
+    font-size: 3rem;
+}
+.sliding{
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+}
+.gentext {
+    font-size: 2.5rem;
+}
+
+@keyframes slide{
+    0%{
+        opacity:0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity:0;
+        transform: translateY(-75vh);
+    }
+}
+
+
+
