@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Stoke:wght@300;400&display=swap" rel="stylesheet"> 
+    <script src="../assets/scripts/contact.js"></script>
+    <title>WWD</title>
+</head>
+<body>
+    <div id="container">
+        <div class="grey">
+            <div class="header">
+                <a href="#">Accueil</a>
+                <a href="#">Projets</a>
+                <a href="#">Services</a>
+            </div>
+        </div>
+        <p class="bonjour">Bonjour</p>
+        <p class="titre">Qui êtes vous ?</p>
+        <form name = "form1" id="form1">
+                        <label for="firstname" id ='labelfirstname'>Prénom</label>
+                        <input name="firstname" type="text" id= "firstname" />
+                        <label for="name" id = "labelname">nom</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email" id = labelemail>e-mail</label>
+                        <input type="email" name="email" id="email" >
+                        
+        </form>
+        <form name = "form2" id="form2" class="textform">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder = "votre message..."></textarea>
+        </form>
+        <button onclick = "enterName()">envoyer</button>
+    </div>
+</body>
+</html>

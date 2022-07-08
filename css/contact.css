@@ -1,0 +1,92 @@
+* {
+    padding:0;
+    margin:0;
+    font-size: 16px;
+}
+.grey {
+    background-color: #343131;
+    width:25%;
+    height: 100vh;
+}
+#container {
+    width: 100%;
+    height: 100%;
+}
+.titre {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Stoke';
+    position: absolute;
+    top: 19%;
+    left: 25%;
+    
+}
+
+.titreout {
+    opacity: 0;
+}
+.bonjour {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Stoke';
+    position: absolute;
+    top: 19%;
+    left: 25%;
+    opacity:0; 
+    transition: all 1s;
+}
+.bonjourin {
+    opacity: 1;
+}
+input {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+form {
+    position: absolute;
+    left: 25%;
+    top: 42%;
+    transition: all 1s;
+    
+}
+button {
+    position: absolute;
+    top: 71%;
+    left: 25%;
+}
+.out {
+    transform: translateY(100%);
+    opacity: 0;
+}
+.textform {
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+}
+.textformin {
+    display:block;
+    opacity:1;
+    top:30%;
+}
+.header {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+button {
+    width:21.093vw;
+    height: 12.178vh;
+    background-color:#343131;
+    color: white;
+    border-radius: 10px;
+    font-family: 'QuickSands';
+    font-size: 3rem;
+}

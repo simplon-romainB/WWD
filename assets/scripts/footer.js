@@ -24,9 +24,5 @@ function sliding() {
         parts[proto-1].classList.remove("sliding")
         
     }
-    
     proto++
-
-    
-
 }

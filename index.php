@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="/css/footerstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Stoke:wght@300;400&display=swap" rel="stylesheet"> 
     <script src="/assets/scripts/footer.js"></script>
+    <script src="/assets/scripts/main.js"></script>
     <title>W.W.D</title>
 </head>
 <body>
-    
     <?php include "footer.html" ?>
 </body>
 </html>
