@@ -9,7 +9,7 @@ header{
 }
 
 .header{
-    background-image: url(/WWD/img/bcg-header2.jpg);
+    background-image: url(../img/bcg-header2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
